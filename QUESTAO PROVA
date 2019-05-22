@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+char frase[50]; 
+int esp; 
+int i=0;//CONTADOR 1
+int j=0; //CONTADOR 2
+
+printf("DIGITE UMA FRASE: ");
+scanf("%[^\n]",frase); 
+esp = strlen(frase);
+
+for(i=esp; i>=0; i--){
+  if(frase[i]==' '){
+    j++;
+  }
+}
+printf("\no texto tem %d caracteres",esp - j );
+printf("\no texto tem %d palavras", j + 1);
+
+return 0;
+}
